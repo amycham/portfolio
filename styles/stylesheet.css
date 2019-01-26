@@ -1,6 +1,6 @@
 /* color codes
   magenta: rgb(230, 0, 92)
-  bright yellow: rgb(230, 230, 0)
+  dark blue: rgb(0, 68, 102)
   light pink: rgb(230, 179, 204)
   dark grey: rgb(85, 85, 85)
   light grey: rgb(190, 190, 190)
@@ -27,7 +27,7 @@ p{
 
 h1{
   text-align: left;
-  font-size: 2.75em;
+  font-size: 2.75rem;
   color: rgb(0,0,0);
   border-radius: 25px 25px 0 0;
   padding: 30px 0 5px 15px;
@@ -65,11 +65,10 @@ nav ul li a:hover{
 main{
   width: 70%;
   float: left;
-  border: 1px solid rgb(230, 230, 0);
+  border: 1px solid rgb(0, 68, 102);
   border-radius: 0 25px;
   margin-bottom: 25px;
   margin-right: 3.33%;
-
 }
 
 h2{
@@ -83,10 +82,9 @@ h3{
   color: rgb(85, 85, 85);
   border-top: 1px solid rgb(190, 190, 190);
   border-bottom: 1px solid rgb(190, 190, 190);
-
   clear: both;
-
 }
+
 article{
   padding: 10px;
 }
@@ -95,47 +93,77 @@ aside{
   width: 25%;
   min-width: 200px;
   float: left;
-  border: 1px solid rgb(230, 230, 0);
+  border: 1px solid rgb(0, 68, 102);
   border-radius: 0 25px;
   margin-bottom: 15px;
-  background-color: rgba(230, 230, 0, .05);
+  background-color: rgba(0, 68, 102, .05);
 }
 
 aside ul{
-  padding: 10px;
+  padding: 10px 10px 20px 20px;
+}
+
+aside ul li{
+  margin-bottom: 3px;
+}
+
+aside ul li a{
+  color: rgb(0,0,0);
+  text-decoration: none;
+}
+
+aside ul li a:hover{
+  color: rgb(230, 0, 92);
+  border-bottom: 3px solid rgb(230, 179, 204);
 }
 
 aside:last-of-type{
   margin-bottom: 25px;
 }
+
 footer{
   clear: both;
   padding: 5px;
-
   border-top: 1px solid rgb(230, 0, 92);
   border-bottom: 1px solid rgb(230, 0, 92);
   text-align: center;
 }
 
 /* specific to Work page */
-ul.projects{
-  padding: 10px;
 
-}
 ul.projects li{
-  width: 200px;
+  width: 45%;
+  min-width: 225px;
   height: 14rem;
   float: left;
+  background-color: rgba(85, 85, 85, .05);
   box-shadow: 5px 5px 18px rgb(190, 190, 190);
-  margin: 0 35px 35px 0;
+  margin: 20px 10px;
   text-align: center;
   vertical-align: bottom;
+}
+
+ul.projects li:nth-child(2n+0){
+  background-color: rgba(0, 68, 102, .05);
+}
+
+ul.projects li:nth-child(3n+0){
+  background-color: rgba(0, 68, 102, .05);
+}
+
+ul.projects li:nth-child(4n+0){
+  background-color: rgba(85, 85, 85, .05);
+}
+
+ul.projects li:hover{
+  background-color: rgba(230, 0, 92, .5);
 }
 
 ul.projects li img{
   height: 8rem;
   margin: auto;
 }
+
 ul.projects li a{
   display: block;
   margin-top: 10px;
@@ -144,5 +172,5 @@ ul.projects li a{
 }
 
 ul.projects li a:hover{
-
+  color: rgb(230, 0, 92);
 }
