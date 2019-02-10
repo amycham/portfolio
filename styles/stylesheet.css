@@ -1,3 +1,19 @@
+:root {
+  --display-font: 'Lalezar', cursive;
+  --body-font: 'Nanum Gothic', sans-serif;
+  --main-color-one: rgb(230, 0, 92);
+  --main-color-two: rgb(0, 68, 102);
+  --body-text-color: rgb(185, 185, 185);
+  --accent-color-light: rgb(230, 179, 204);
+  /* --accent-dark: */
+  --light-grey: rgb(190, 190, 190);
+
+  font-size: 62.5%;
+}
+
+html{
+  background-color: rgb(0,0,0);
+}
 /* color codes
   magenta: rgb(230, 0, 92)
   dark blue: rgb(0, 68, 102)
@@ -12,25 +28,34 @@
 }
 
 body{
-  width: 75%;
-  max-width: 1500px;
+  font-size: 1.5rem;
+  width: 90%;
+  max-width: 1200px;
   padding: 15px;
   margin: auto;
-  /* Trebuchet-based sans serif stack */
-  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
-  color: rgb(85, 85, 85);
+  font-family: var(--body-font);
+  color: var(--body-text-color);
 }
 
 p{
   padding: 5px 0;
 }
 
+a{
+  color: var(--main-color-one);
+  text-decoration: none;
+}
+
+a:hover{
+  color: var(--accent-color-light);
+}
+
 h1{
   text-align: left;
-  font-size: 2.75rem;
-  color: rgb(0,0,0);
-  border-radius: 25px 25px 0 0;
+  font-size: 6.75rem;
+  color: var(--main-color-one);
   padding: 30px 0 5px 15px;
+  font-family: var(--display-font);
 }
 
 nav{
@@ -42,9 +67,7 @@ nav ul li, ul.projects li, ul#social li{
 }
 
 nav ul{
-  padding: 15px;
-  border-top: 1px solid rgb(230, 0, 92);
-  border-bottom: 1px solid rgb(230, 0, 92);
+  padding-left: 15px;
 }
 
 nav ul li{
@@ -53,35 +76,33 @@ nav ul li{
 }
 
 nav ul li a{
-  color: rgb(0,0,0);
+  color: var(--main-color-one);
+  padding-bottom: 5px;
   text-decoration: none;
 }
 
 nav ul li a:hover{
-  color: rgb(230, 0, 92);
-  border-bottom: 3px solid rgb(230, 179, 204);
+  border-bottom: 3px solid var(--accent-color-light);
 }
 
 main{
-  width: 70%;
-  float: left;
-  border: 1px solid rgb(0, 68, 102);
-  border-radius: 0 25px;
+  width: 100%;
   margin-bottom: 25px;
   margin-right: 3.33%;
 }
 
 h2{
-  color: rgb(85, 85, 85);
+  color: var(--body-text-color);
   padding: 10px 10px 5px 10px;
+  font-size: 4.5rem;
 }
 
 h3{
-  padding: 5px 35px 5px 15px;
+  font-size: 2.5rem;
+  padding: 5px 35px 5px 10px;
   margin-bottom: 15px;
-  color: rgb(85, 85, 85);
-  border-top: 1px solid rgb(190, 190, 190);
-  border-bottom: 1px solid rgb(190, 190, 190);
+  color: var(--body-text-color);
+  border-left: 25px solid var(--main-color-two);
   clear: both;
 }
 
@@ -90,13 +111,9 @@ article{
 }
 
 aside{
-  width: 25%;
-  min-width: 200px;
-  float: left;
-  border: 1px solid rgb(0, 68, 102);
-  border-radius: 0 25px;
+  width: 100%;
   margin-bottom: 15px;
-  background-color: rgba(0, 68, 102, .05);
+
 }
 
 aside ul{
@@ -107,15 +124,11 @@ aside ul li{
   margin-bottom: 3px;
 }
 
-aside ul li a{
-  color: rgb(0,0,0);
-  text-decoration: none;
+aside ul li .fab{
+  color: var(--main-color-two);
+  padding-right: 5px;
 }
 
-aside ul li a:hover{
-  color: rgb(230, 0, 92);
-  border-bottom: 3px solid rgb(230, 179, 204);
-}
 
 aside:last-of-type{
   margin-bottom: 25px;
@@ -124,8 +137,7 @@ aside:last-of-type{
 footer{
   clear: both;
   padding: 5px;
-  border-top: 1px solid rgb(230, 0, 92);
-  border-bottom: 1px solid rgb(230, 0, 92);
+  background-color: var(--main-color-one);
   text-align: center;
 }
 
