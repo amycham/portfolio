@@ -15,13 +15,7 @@
 html{
   background-color: rgb(0,0,0);
 }
-/* color codes
-  magenta: rgb(230, 0, 92)
-  dark blue: rgb(0, 68, 102)
-  light pink: rgb(230, 179, 204)
-  dark grey: rgb(85, 85, 85)
-  light grey: rgb(190, 190, 190)
-*/
+
 /* clear out browser formatting */
 *{
   margin: 0;
@@ -41,6 +35,7 @@ body{
 
 p{
   padding: 10px;
+  line-height: 1.35em;
 }
 
 a{
@@ -112,22 +107,17 @@ h3{
 
 article{
   padding: 10px;
-
 }
 
 .flex-container{
   flex-wrap: wrap;
   display: flex;
   justify-content: flex-start;
-
 }
-
 
 .chunked p{
   width: 20rem;
 }
-
-
 
 aside{
   width: 100%;
@@ -138,7 +128,6 @@ aside{
 
 aside ul{
   padding: 10px 10px 20px 20px;
-
 }
 
 aside ul li{
@@ -152,7 +141,6 @@ aside ul li .fab{
   padding-right: 5px;
 }
 
-
 aside:last-of-type{
   margin-bottom: 25px;
 }
@@ -165,31 +153,16 @@ footer{
 }
 
 /* specific to Work page */
-ul.projects{
-  clear:both;
-}
+
 ul.projects li{
-  width: 45%;
+  width: 30rem;
   min-width: 225px;
   height: 14rem;
-  float: left;
   background-color: var(--main-color-one-semi);
   box-shadow: 5px 5px 18px var(--main-color-two-semi);
   margin: 20px 10px;
   text-align: center;
   vertical-align: bottom;
-}
-
-ul.projects li:nth-child(2n+0){
-  background-color: var(--main-color-two-semi);
-}
-
-ul.projects li:nth-child(3n+0){
-  background-color: var(--main-color-two-semi);
-}
-
-ul.projects li:nth-child(4n+0){
-  background-color: var(--main-color-one-semi);
 }
 
 ul.projects li:hover{
