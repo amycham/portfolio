@@ -2,7 +2,9 @@
   --display-font: 'Lalezar', cursive;
   --body-font: 'Nanum Gothic', sans-serif;
   --main-color-one: rgb(230, 0, 92);
+  --main-color-one-semi: rgba(230, 0, 92, .25);
   --main-color-two: rgb(0, 68, 102);
+  --main-color-two-semi: rgb(0, 68, 102, .25);
   --body-text-color: rgb(185, 185, 185);
   --accent-color-light: rgb(230, 179, 204);
   --light-grey: rgb(190, 190, 190);
@@ -130,6 +132,7 @@ article{
 aside{
   width: 100%;
   margin-bottom: 15px;
+  clear: both;
 
 }
 
@@ -162,29 +165,31 @@ footer{
 }
 
 /* specific to Work page */
-
+ul.projects{
+  clear:both;
+}
 ul.projects li{
   width: 45%;
   min-width: 225px;
   height: 14rem;
   float: left;
-  background-color: rgba(85, 85, 85, .05);
-  box-shadow: 5px 5px 18px rgb(190, 190, 190);
+  background-color: var(--main-color-one-semi);
+  box-shadow: 5px 5px 18px var(--main-color-two-semi);
   margin: 20px 10px;
   text-align: center;
   vertical-align: bottom;
 }
 
 ul.projects li:nth-child(2n+0){
-  background-color: rgba(0, 68, 102, .05);
+  background-color: var(--main-color-two-semi);
 }
 
 ul.projects li:nth-child(3n+0){
-  background-color: rgba(0, 68, 102, .05);
+  background-color: var(--main-color-two-semi);
 }
 
 ul.projects li:nth-child(4n+0){
-  background-color: rgba(85, 85, 85, .05);
+  background-color: var(--main-color-one-semi);
 }
 
 ul.projects li:hover{
@@ -200,7 +205,7 @@ ul.projects li a{
   display: block;
   margin-top: 10px;
   text-decoration: none;
-  color: rgb(85, 85, 85);
+  color: var(--body-text-color);
 }
 
 ul.projects li a:hover{
