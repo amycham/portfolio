@@ -5,7 +5,6 @@
   --main-color-two: rgb(0, 68, 102);
   --body-text-color: rgb(185, 185, 185);
   --accent-color-light: rgb(230, 179, 204);
-  /* --accent-dark: */
   --light-grey: rgb(190, 190, 190);
 
   font-size: 62.5%;
@@ -25,6 +24,7 @@ html{
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body{
@@ -38,7 +38,7 @@ body{
 }
 
 p{
-  padding: 5px 0;
+  padding: 10px;
 }
 
 a{
@@ -79,6 +79,7 @@ nav ul li a{
   color: var(--main-color-one);
   padding-bottom: 5px;
   text-decoration: none;
+  font-size: 2.5rem;
 }
 
 nav ul li a:hover{
@@ -99,16 +100,32 @@ h2{
 
 h3{
   font-size: 2.5rem;
-  padding: 5px 35px 5px 10px;
+  padding: 10px;
   margin-bottom: 15px;
   color: var(--body-text-color);
   border-left: 25px solid var(--main-color-two);
-  clear: both;
+  width: 30rem;
+  float: left;
 }
 
 article{
   padding: 10px;
+
 }
+
+.flex-container{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+
+.chunked p{
+  width: 20rem;
+}
+
+
 
 aside{
   width: 100%;
@@ -118,10 +135,13 @@ aside{
 
 aside ul{
   padding: 10px 10px 20px 20px;
+
 }
 
 aside ul li{
-  margin-bottom: 3px;
+  margin: 0 20px 10px 0;
+  display: inline-block;
+  font-size: 2.5rem;
 }
 
 aside ul li .fab{
@@ -185,4 +205,20 @@ ul.projects li a{
 
 ul.projects li a:hover{
   color: rgb(230, 0, 92);
+}
+
+@media screen and (max-width: 768px){
+  h2{
+    font-size: 2.5rem;
+  }
+  h3{
+    float: none;
+    clear: both;
+  }
+  p{
+    padding: 10px 0;
+  }
+  .chunked p{
+    width: 100%;
+  }
 }
