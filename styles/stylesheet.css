@@ -3,6 +3,7 @@
   --body-font: 'Nanum Gothic', sans-serif;
   --main-color-one: rgb(230, 0, 92);
   --main-color-one-semi: rgba(230, 0, 92, .25);
+  --main-color-one-half: rgba(230, 0, 92, .5);
   --main-color-two: rgb(0, 68, 102);
   --main-color-two-semi: rgb(0, 68, 102, .25);
   --body-text-color: rgb(185, 185, 185);
