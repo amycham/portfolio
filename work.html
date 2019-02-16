@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lalezar%7cNanum+Gothic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="styles/tag-filter.css">
   </head>
   <body>
     <header>
@@ -22,6 +23,9 @@
       <section>
         <header>
             <h2>This is my work.</h2>
+            <p>Click the tags to highlight by technology:</p>
+            <input type='checkbox' id='drupal' name='drupal' checked>
+            <label for='drupal'>Drupal</label>
         </header>
         <article>
           <header>
@@ -54,7 +58,7 @@
             <h3>Vintage code</h3>
           </header>
           <ul class='projects flex-container'>
-            <li>
+            <li tags='drupal'>
               <a href="http://ielcap.org/" target='_blank' title='IELCAP website'><img src="images/ielcap.png" alt="IELCAP.org screenshot"></a>
               <a href="http://ielcap.org/" target='_blank' title='IELCAP website'>IELCAP.org<br> (2013)</a>
             </li>

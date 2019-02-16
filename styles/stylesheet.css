@@ -45,6 +45,8 @@ a{
 
 a:hover{
   color: var(--accent-color-light);
+  transition: color 2s;
+
 }
 
 h1{
@@ -79,8 +81,13 @@ nav ul li a{
   font-size: 2.5rem;
 }
 
-nav ul li a:hover{
-  border-bottom: 3px solid var(--accent-color-light);
+nav ul li a:hover,
+aside a:hover{
+
+  text-shadow: 0 0 10px var(--accent-color-light);
+  position: relative;
+  top: -10px;
+  transition: color 1s, text-shadow 2s, top 2s;
 }
 
 main{
@@ -110,13 +117,15 @@ article{
 }
 
 .flex-container{
-  flex-wrap: wrap;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
 }
 
 .chunked p{
-  width: 20rem;
+  width: 30%;
+  max-width: 30rem;
+  min-width: 22rem;
 }
 
 aside{
@@ -155,8 +164,10 @@ footer{
 /* specific to Work page */
 
 ul.projects li{
-  width: 30rem;
-  min-width: 225px;
+  display: block;
+  width: 30%;
+  max-width: 30rem;
+  min-width: 22rem;
   height: 14rem;
   background-color: var(--main-color-one-semi);
   box-shadow: 5px 5px 18px var(--main-color-two-semi);
@@ -185,7 +196,8 @@ ul.projects li a:hover{
   color: rgb(230, 0, 92);
 }
 
-@media screen and (max-width: 768px){
+/* mobile/small layout adjustments */
+@media screen and (max-width: 920px){
   h2{
     font-size: 2.5rem;
   }
@@ -198,5 +210,6 @@ ul.projects li a:hover{
   }
   .chunked p{
     width: 100%;
+    max-width: 100%;
   }
 }
