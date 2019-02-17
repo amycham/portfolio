@@ -10,6 +10,8 @@
   --accent-color-light: rgb(230, 179, 204);
   --light-grey: rgb(190, 190, 190);
 
+  --project-height: 16rem;
+
   font-size: 62.5%;
 }
 
@@ -170,17 +172,12 @@ footer{
   float: none;
 }
 
-article.twocol{
-  width: 50%;
-  float: left;
-}
-
 ul.projects li{
   display: block;
   width: 15%;
   min-width: 140px;
   max-width: 30rem;
-  height: 16rem;
+  height: var(--project-height);
   background-color: var(--main-color-one-semi);
   box-shadow: 5px 5px 18px var(--main-color-two-semi);
   padding-bottom: 10px;

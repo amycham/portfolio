@@ -42,7 +42,9 @@ label.clickable:hover{
 #javascript:not(checked) ~ article > ul > li{
   opacity: 1;
   background-color: var(--main-color-one-semi);
-  transition: opacity 2s, background-color 2s;
+  height: var(--project-height);
+  margin: 20px 10px;
+  transition: background-color 2s, opacity 2s, margin 3s, height 2s ease-in;
 }
 
 /* fade those that don't match a selected tag */
@@ -53,8 +55,11 @@ label.clickable:hover{
 #php:checked ~ article > ul > li:not([data-tags~=php]),
 #javascript:checked ~ article > ul > li:not([data-tags~=javascript]){
   background-color: var(--main-color-one-semi);
-  opacity: 0.25;
-  transition: opacity 2s, background-color 2s;
+  opacity: 0;
+  overflow: hidden;
+  height: 0;
+  margin: 0 10px;
+  transition: background-color 2s, opacity 2s, margin 3s, height 2s ease-in;
 }
 
 /* highlight those that do match selected tag */
@@ -67,38 +72,7 @@ label.clickable:hover{
 {
   opacity: 1;
   background-color: var(--main-color-one);
-  transition: opacity 2s, background-color 2s;
-}
-
-/* phone layout adjustment */
-@media screen and (max-width: 425px){
-  /* normal state */
-  #drupal:not(checked) ~ article > ul > li,
-  #css3:not(checked) ~ article > ul > li,
-  #html5:not(checked) ~ article > ul > li,
-  #xhtml:not(checked) ~ article > ul > li,
-  #php:not(checked) ~ article > ul > li,
-  #javascript:not(checked) ~ article > ul > li{
-    display: block;
-  }
-
-  #drupal:checked ~ article > ul > li:not([data-tags~=drupal]),
-  #css3:checked ~ article > ul > li:not([data-tags~=css3]),
-  #html5:checked ~ article > ul > li:not([data-tags~=html5]),
-  #xhtml:checked ~ article > ul > li:not([data-tags~=xhtml]),
-  #php:checked ~ article > ul > li:not([data-tags~=php]),
-  #javascript:checked ~ article > ul > li:not([data-tags~=javascript]){
-    display: none;
-  }
-
-  /* highlight those that do match selected tag */
-  #drupal:checked ~ article > ul > li[data-tags~=drupal],
-  #css3:checked ~ article > ul > li[data-tags~=css3],
-  #html5:checked ~ article > ul > li[data-tags~=html5],
-  #xhtml:checked ~ article > ul > li[data-tags~=xhtml],
-  #php:checked ~ article > ul > li[data-tags~=php],
-  #javascript:checked ~ article > ul > li[data-tags~=javascript]
-  {
-    display: block;
-  }
+  height: var(--project-height);
+  margin: 20px 10px;
+  transition: background-color 2s, opacity 2s, margin 3s, height 2s ease-in;
 }
