@@ -21,10 +21,11 @@ label.clickable{
   margin: 10px;
   background-color: var(--main-color-two);
   border-radius: 5px;
+  display: inline-block;
 }
 
 label.clickable:hover{
-  background-color: var(--main-color-one);
+  background-color: var(--main-color-one-half);
 }
 
 #drupal:checked + label.clickable,
