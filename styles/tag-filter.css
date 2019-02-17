@@ -7,8 +7,6 @@ p#tagnote ~ label:first-of-type{
   margin-left: 10px;
 }
 
-
-
 input.tags{
   display: none;
 }
@@ -34,6 +32,7 @@ label.clickable:hover{
 #javascript:checked  + label.clickable{
   background-color: var(--main-color-one);
 }
+
 /* normal state */
 #drupal:not(checked) ~ article > ul > li,
 #css3:not(checked) ~ article > ul > li,
@@ -82,8 +81,6 @@ label.clickable:hover{
   #javascript:not(checked) ~ article > ul > li{
     display: block;
   }
-
-
 
   #drupal:checked ~ article > ul > li:not([data-tags~=drupal]),
   #css3:checked ~ article > ul > li:not([data-tags~=css3]),

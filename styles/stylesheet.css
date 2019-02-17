@@ -129,6 +129,9 @@ article{
   min-width: 22rem;
 }
 
+.chunked p:nth-child(4){
+  color: var(--accent-color-light);
+}
 aside{
   width: 100%;
   margin-bottom: 15px;
@@ -171,6 +174,7 @@ article.twocol{
   width: 50%;
   float: left;
 }
+
 ul.projects li{
   display: block;
   width: 15%;
