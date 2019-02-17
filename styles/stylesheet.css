@@ -163,12 +163,19 @@ footer{
 }
 
 /* specific to Work page */
+#work h3{
+  float: none;
+}
 
+article.twocol{
+  width: 50%;
+  float: left;
+}
 ul.projects li{
   display: block;
-  width: 30%;
+  width: 15%;
+  min-width: 140px;
   max-width: 30rem;
-  min-width: 22rem;
   height: 16rem;
   background-color: var(--main-color-one-semi);
   box-shadow: 5px 5px 18px var(--main-color-two-semi);
@@ -213,5 +220,17 @@ ul.projects li a:hover{
   .chunked p{
     width: 100%;
     max-width: 100%;
+  }
+
+  article.twocol{
+    width: 100%;
+    float: none;
+  }
+}
+
+/* phone layout adjustment */
+@media screen and (max-width: 425px){
+  ul.projects li{
+    width: 100%;
   }
 }
