@@ -44,7 +44,7 @@ label.clickable:hover{
   background-color: var(--main-color-one-semi);
   height: var(--project-height);
   margin: 20px 10px;
-  transition: background-color 2s, opacity 2s, margin 3s, height 2s ease-in;
+    transition: background-color 2s, height 3s ease-in, opacity 2s ease-in 2s, margin 3s;
 }
 
 /* fade those that don't match a selected tag */
@@ -70,9 +70,8 @@ label.clickable:hover{
 #php:checked ~ article > ul > li[data-tags~=php],
 #javascript:checked ~ article > ul > li[data-tags~=javascript]
 {
-  opacity: 1;
-  background-color: var(--main-color-one);
   height: var(--project-height);
+  opacity: 1;
   margin: 20px 10px;
-  transition: background-color 2s, opacity 2s, margin 3s, height 2s ease-in;
+  transition: background-color 2s, height 3s ease-in, opacity 2s ease-in 2s, margin 3s;
 }

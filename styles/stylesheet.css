@@ -2,7 +2,7 @@
   --display-font: 'Lalezar', cursive;
   --body-font: 'Nanum Gothic', sans-serif;
   --main-color-one: rgb(230, 0, 92);
-  --main-color-one-semi: rgba(230, 0, 92, .25);
+  --main-color-one-semi: rgba(230, 0, 92, .35);
   --main-color-one-half: rgba(230, 0, 92, .5);
   --main-color-two: rgb(0, 68, 102);
   --main-color-two-semi: rgb(0, 68, 102, .25);
@@ -10,7 +10,7 @@
   --accent-color-light: rgb(230, 179, 204);
   --light-grey: rgb(190, 190, 190);
 
-  --project-height: 16rem;
+  --project-height: 18rem;
 
   font-size: 62.5%;
 }
@@ -86,7 +86,6 @@ nav ul li a{
 
 nav ul li a:hover,
 aside a:hover{
-
   text-shadow: 0 0 10px var(--accent-color-light);
   position: relative;
   top: -5px;
@@ -134,6 +133,13 @@ article{
 .chunked p:nth-child(4){
   color: var(--accent-color-light);
 }
+
+.chunked p:nth-child(6){
+  background-color: var(--accent-color-light);
+  color: rgb(0,0,0);
+  font-weight: bold;
+}
+
 aside{
   width: 100%;
   margin-bottom: 15px;
@@ -174,13 +180,12 @@ footer{
 
 ul.projects li{
   display: block;
-  width: 15%;
-  min-width: 140px;
-  max-width: 30rem;
+  width: 20%;
+  min-width: 160px;
   height: var(--project-height);
   background-color: var(--main-color-one-semi);
   box-shadow: 5px 5px 18px var(--main-color-two-semi);
-  padding-bottom: 10px;
+  padding: 5px;
   margin: 20px 10px;
   text-align: center;
   vertical-align: bottom;
