@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Amy Cham - Contact Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lalezar%7cNanum+Gothic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+  </head>
+  <body>
+    <header>
+      <h1>Amy Cham</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="work.html">My Work</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <header>
+            <h2>Let's talk.</h2>
+        </header>
+        <article>
+          <header>
+            <h3>I am currently available for in-house or freelance front end developer work in Seattle and/or remote. Drupal editor admin configuration and end user training also available on a short-term contract basis.</h3>
+          </header>
+          <form class="contact-form" action="https://formspree.io/amycham@gmail.com" method="post">
+            <label for='first-name'>First Name</label>
+            <input type="text" name='first-name' id='first-name' required>
+            <label for='last-name'>Last Name</label>
+            <input type="text" name='last-name' id='last-name' required>
+            <label for='company'>Company Name</label>
+            <input type="text" name='company-name' id='company-name'>
+            <label for='email-address'>Email Address</label>
+            <input type="email" name='email-address' id='email-address'>
+            <fieldset id='type-work'>
+                <legend>If you are looking for someone to work with, what type of work do you need done? (Check all that apply.)</legend>
+                <div>
+                  <input type="checkbox" name="front-end" id='front-end' value="Front-end">
+                  <label for="front-end">Front-end development</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="drupal-config" id='drupal-config' value="Drupal Configuration">
+                  <label for="drupal-config">Drupal editor admin configuration</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="web-development" id='web-development' value="Web development">
+                  <label for="web-development">Small business website development</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="training" id='training' value="Training">
+                  <label for="training">End user training</label>
+                </div>
+              </fieldset>
+              <fieldset id='work-terms'>
+                <legend>If you are looking for someone to work with, what type of working arrangement is expected? (Check all that apply.)</legend>
+                <div>
+                  <input type="checkbox" name="in-house" id='in-house' value="In House">
+                  <label for="in-house">In-house position</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="contract" id='contract' value="Contract">
+                  <label for="contract">Contract/freelance</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="remote" id='remote' value="Remote">
+                  <label for="remote">Remote</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="on-site" id='on-site' value="On site">
+                  <label for="on-site">On site</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="full-time" id='full-time' value="Full time">
+                  <label for="full-time">Full time</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="part-time" id='part-time' value="Part time">
+                  <label for="part-time">Part time</label>
+                </div>
+              </fieldset>
+            <input type="submit" value="Send">
+          </form>
+        </article>
+      </section>
+    </main>
+    <!-- template sidebar -->
+    <aside>
+      <h2>Find me.</h2>
+      <ul id='social'>
+        <li><a href="https://github.com/amycham" target='_blank'><i class="fab fa-github"></i> Github</a></li>
+        <li><a href="https://www.linkedin.com/in/amycham/" target='_blank'><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+        <li><a href="https://twitter.com/amycham" target='_blank'><i class="fab fa-twitter"></i> Twitter</a></li>
+        <li><a href="https://www.drupal.org/u/amycham" target='_blank'><i class="fab fa-drupal"></i> Drupal.org</a></li>
+      </ul>
+    </aside>
+    <footer>
+      <p>&copy; 2019 Amy Cham</p>
+    </footer>
+  </body>
+</html>
