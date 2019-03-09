@@ -211,6 +211,27 @@ ul.projects li a:hover{
   color: rgb(230, 0, 92);
 }
 
+/* contact form */
+form input:invalid{
+  background-color: red;
+}
+
+fieldset#contact-info label{
+  width: 20rem;
+  float: left;
+}
+
+fieldset#contact-info input{
+  float: left;
+  clear: right;
+}
+
+form.contact-form fieldset div{
+  float: left;
+  width: 50%;
+}
+
+
 /* mobile/small layout adjustments */
 @media screen and (max-width: 920px){
   h2{

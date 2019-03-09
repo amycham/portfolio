@@ -15,7 +15,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="work.html">My Work</a></li>
-          <li><a href="contact.html">Contact Me</a></li>
+          <li><a href="#">Contact Me</a></li>
         </ul>
       </nav>
     </header>
@@ -26,17 +26,28 @@
         </header>
         <article>
           <header>
-            <h3>I am currently available for in-house or freelance front end developer work in Seattle and/or remote. Drupal editor admin configuration and end user training also available on a short-term contract basis.</h3>
+            <h3>I am currently available for in-house or freelance front end developer work in Seattle and/or remote.<br><br>
+              Small business web development, Drupal editor admin configuration, and end user training also available on a short-term contract basis.</h3>
           </header>
           <form class="contact-form" action="https://formspree.io/amycham@gmail.com" method="post">
+          <fieldset id='contact-info'>
             <label for='first-name'>First Name</label>
-            <input type="text" name='first-name' id='first-name' required>
+            <input type="text" name='first-name' id='first-name' required size='40'>
             <label for='last-name'>Last Name</label>
-            <input type="text" name='last-name' id='last-name' required>
+            <input type="text" name='last-name' id='last-name' required size='40'>
             <label for='company'>Company Name</label>
-            <input type="text" name='company-name' id='company-name'>
+            <input type="text" name='company-name' id='company-name' size='40'>
             <label for='email-address'>Email Address</label>
-            <input type="email" name='email-address' id='email-address'>
+            <input type="email" name='email-address' id='email-address' size='40'>
+          </fieldset>
+
+              <input type="radio" name="need-work" id='work-yes' value="Have work" checked>
+              <label for='work-yes'>I want to talk about some work.</label>
+
+
+              <input type="radio" name="need-work" id='work-no' value="No work">
+              <label for='work-no'>I am not looking for you do any work.</label>
+
             <fieldset id='type-work'>
                 <legend>If you are looking for someone to work with, what type of work do you need done? (Check all that apply.)</legend>
                 <div>
