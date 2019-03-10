@@ -34,7 +34,6 @@ textarea{
 	vertical-align: middle;
 	background: rgb(255, 255, 255);
 	line-height: 1;
-
 	font-size: 100%;
 	font-family: inherit;
 }
@@ -48,7 +47,6 @@ label{
 }
 
 input[type='submit']{
-
   margin-left: 20px;
   cursor: pointer;
   padding: 5px 15px;
@@ -190,7 +188,6 @@ h3{
   color: var(--body-text-color);
   border-left: 25px solid var(--main-color-two);
   width: 30rem;
-
 }
 
 article{
@@ -225,7 +222,6 @@ aside{
   width: 100%;
   margin-bottom: 15px;
   clear: both;
-
 }
 
 aside ul{
@@ -293,8 +289,6 @@ ul.projects li a:hover{
 }
 
 /* contact form */
-
-
 form.contact-form fieldset#type-work div,
 form.contact-form fieldset#work-terms div{
   float: left;
@@ -319,6 +313,7 @@ fieldset#contact-info label{
   opacity: .25;
   transition: opacity 2s, height 2s;
 }
+
 /* mobile/small layout adjustments */
 @media screen and (max-width: 920px){
   h2{
@@ -335,9 +330,11 @@ fieldset#contact-info label{
     width: 100%;
     max-width: 100%;
   }
+
   article{
     display: block;
   }
+
   article.twocol{
     width: 100%;
     float: none;
@@ -355,6 +352,7 @@ fieldset#contact-info label{
     width: calc(100% - 25px - 10px);
   }
 }
+
 /* phone layout adjustment */
 @media screen and (max-width: 425px){
   ul.projects li{
