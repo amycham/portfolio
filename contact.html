@@ -31,44 +31,61 @@
           </header>
           <form class="contact-form" action="https://formspree.io/amycham@gmail.com" method="post">
           <fieldset id='contact-info'>
-            <label for='first-name'>First Name</label>
-            <input type="text" name='first-name' id='first-name' required size='40'>
-            <label for='last-name'>Last Name</label>
-            <input type="text" name='last-name' id='last-name' required size='40'>
-            <label for='company'>Company Name</label>
-            <input type="text" name='company-name' id='company-name' size='40'>
-            <label for='email-address'>Email Address</label>
-            <input type="email" name='email-address' id='email-address' size='40'>
+            <legend>Your contact info</legend>
+            <div>
+              <label for='first-name'>First Name</label>
+              <input type="text" name='first-name' id='first-name' required size='40' placeholder='(Required)'>
+            </div>
+            <div>
+              <label for='last-name'>Last Name</label>
+              <input type="text" name='last-name' id='last-name' required size='40' placeholder='(Required)'>
+            </div>
+            <div>
+              <label for='company'>Company Name</label>
+              <input type="text" name='company-name' id='company-name' size='40'>
+            </div>
+            <div>
+              <label for='email-address'>Email Address</label>
+              <input type="email" name='email-address' id='email-address' size='40' required placeholder='(Required)'>
+            </div>
+            <div>
+              <label for='telephone'>Telephone</label>
+              <input type="tel" name='telephone' id='telephone' size='40' pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder='Format: 555-555-5555'>
+            </div>
           </fieldset>
 
               <input type="radio" name="need-work" id='work-yes' value="Have work" checked>
-              <label for='work-yes'>I want to talk about some work.</label>
+              <label for='work-yes'>I want to talk about some work.</label><br>
 
 
               <input type="radio" name="need-work" id='work-no' value="No work">
-              <label for='work-no'>I am not looking for you do any work.</label>
+              <label for='work-no'>I want to talk about something else.</label>
 
             <fieldset id='type-work'>
-                <legend>If you are looking for someone to work with, what type of work do you need done? (Check all that apply.)</legend>
+                <legend>What type of work do you need done?</legend>
                 <div>
                   <input type="checkbox" name="front-end" id='front-end' value="Front-end">
                   <label for="front-end">Front-end development</label>
                 </div>
                 <div>
                   <input type="checkbox" name="drupal-config" id='drupal-config' value="Drupal Configuration">
-                  <label for="drupal-config">Drupal editor admin configuration</label>
+                  <label for="drupal-config">Drupal admin configuration</label>
                 </div>
                 <div>
                   <input type="checkbox" name="web-development" id='web-development' value="Web development">
-                  <label for="web-development">Small business website development</label>
+                  <label for="web-development">Small website development</label>
                 </div>
                 <div>
                   <input type="checkbox" name="training" id='training' value="Training">
                   <label for="training">End user training</label>
                 </div>
+                <div>
+                  <input type="checkbox" name="other" id='other' value="Other work">
+                  <label for="other">Something else</label>
+                </div>
               </fieldset>
               <fieldset id='work-terms'>
-                <legend>If you are looking for someone to work with, what type of working arrangement is expected? (Check all that apply.)</legend>
+                <legend>What type of working arrangement?</legend>
                 <div>
                   <input type="checkbox" name="in-house" id='in-house' value="In House">
                   <label for="in-house">In-house position</label>
@@ -94,6 +111,10 @@
                   <label for="part-time">Part time</label>
                 </div>
               </fieldset>
+              <div>
+                <label class='ta-label' for="message">Your message</label>
+                <textarea name="message" rows="8" cols="60"></textarea>
+              </div>
             <input type="submit" value="Send">
           </form>
         </article>

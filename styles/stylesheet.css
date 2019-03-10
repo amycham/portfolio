@@ -26,6 +26,84 @@ html{
   box-sizing: border-box;
 }
 
+input,
+select,
+button,
+textarea{
+	border: 0;
+	vertical-align:middle;
+	background: rgb(255, 255, 255);
+	line-height: 1;
+
+	font-size: 100%;
+	font-family: inherit;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+label{
+  padding: 5px;
+  margin: 10px 0;
+}
+
+input[type='submit']{
+
+  margin-left: 30px;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: var(--main-color-two);
+  color: rgb(255, 255, 255);
+}
+
+input[type='submit']:hover{
+  background-color: var(--accent-color-light);
+  box-shadow: 0 0 20px var(--accent-color-light);
+  transition: background-color 1s, box-shadow 1s;
+}
+
+input::placeholder{
+    font-style: italic;
+    color: var(--main-color-one);
+}
+
+input:invalid{
+  background: var(--light-grey) url('../images/arrow.png') center right no-repeat;
+}
+
+input:focus:valid{
+  background: rgb(255, 255, 255) url('../images/checkmark.png') center right no-repeat;
+}
+
+input[type='radio']{
+  margin: 0 5px 10px 35px;
+}
+
+fieldset{
+  border: 1px solid var(--main-color-one);
+  border-radius: 10px;
+  margin: 20px;
+  padding: 15px;
+}
+
+fieldset legend,
+label.ta-label{
+  font-family: var(--display-font);
+  font-size: 2.25rem;
+  padding: 0 10px 0 5px;
+}
+
+label.ta-label{
+  margin-left: 30px;
+  display: block;
+}
+
+textarea{
+  margin: 15px 0 20px 25px;
+  border-radius: 10px;
+
+}
 body{
   font-size: 1.5rem;
   width: 90%;
@@ -111,11 +189,13 @@ h3{
   color: var(--body-text-color);
   border-left: 25px solid var(--main-color-two);
   width: 30rem;
-  float: left;
+
 }
 
 article{
   padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .flex-container{
@@ -174,8 +254,8 @@ footer{
 }
 
 /* specific to Work page */
-#work h3{
-  float: none;
+article.no-grid{
+  display: block;
 }
 
 ul.projects li{
@@ -212,25 +292,19 @@ ul.projects li a:hover{
 }
 
 /* contact form */
-form input:invalid{
-  background-color: red;
+
+
+form.contact-form fieldset#type-work div,
+form.contact-form fieldset#work-terms div{
+  float: left;
+  width: 50%;
+  margin-bottom: 10px;
 }
 
 fieldset#contact-info label{
-  width: 20rem;
+  width: 15rem;
   float: left;
 }
-
-fieldset#contact-info input{
-  float: left;
-  clear: right;
-}
-
-form.contact-form fieldset div{
-  float: left;
-  width: 50%;
-}
-
 
 /* mobile/small layout adjustments */
 @media screen and (max-width: 920px){
