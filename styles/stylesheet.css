@@ -306,6 +306,18 @@ fieldset#contact-info label{
   float: left;
 }
 
+#work-yes:checked ~ fieldset[data-needs~=work]{
+  height: auto;
+  opacity: 1;
+  transition: opacity 2s, height 2s;
+}
+
+#work-no:checked ~ fieldset[data-needs~=work]{
+  height: 40px;
+  overflow: hidden;
+  opacity: .25;
+  transition: opacity 2s, height 2s;
+}
 /* mobile/small layout adjustments */
 @media screen and (max-width: 920px){
   h2{
