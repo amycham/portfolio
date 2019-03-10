@@ -70,7 +70,9 @@ input:invalid{
   background: var(--light-grey) url('../images/arrow.png') center right no-repeat;
 }
 
-input:focus:valid{
+input[type='text']:focus:valid,
+input[type='email']:focus:valid,
+input[type='tel']:focus:valid{
   background: rgb(255, 255, 255) url('../images/checkmark.png') center right no-repeat;
 }
 
@@ -100,7 +102,7 @@ label.ta-label{
 textarea{
   margin: 15px 0 20px 20px;
   border-radius: 10px;
-
+  padding: 10px;
 }
 
 body{
