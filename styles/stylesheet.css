@@ -325,6 +325,14 @@ fieldset#contact-info label{
   transition: opacity 2s, height 2s;
 }
 
+#work-no:checked ~ fieldset[data-needs~=work] input,
+#work-no:checked ~ fieldset[data-needs~=work] label
+{
+  height: 0;
+  display: none;
+  transition: all 2s;
+}
+
 /* mobile/small layout adjustments */
 @media screen and (max-width: 920px){
   h2{
