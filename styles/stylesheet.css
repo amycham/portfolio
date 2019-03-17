@@ -6,9 +6,9 @@
   --main-color-one-half: rgba(230, 0, 92, .5);
   --main-color-two: rgb(0, 68, 102);
   --main-color-two-semi: rgb(0, 68, 102, .25);
-  --body-text-color: rgb(185, 185, 185);
+  --body-text-color: rgb(225, 225, 225);
   --accent-color-light: rgb(230, 179, 204);
-  --light-grey: rgb(190, 190, 190);
+  --light-grey: rgb(225, 225, 225);
 
   --project-height: 18rem;
 
@@ -113,6 +113,15 @@ body{
   margin: auto;
   font-family: var(--body-font);
   color: var(--body-text-color);
+}
+
+/* hide text from visual users, provide for screen readers and tabbing */
+.skiplink, .hiddentext{
+  position: absolute;
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  left: -5000px;
 }
 
 p{
